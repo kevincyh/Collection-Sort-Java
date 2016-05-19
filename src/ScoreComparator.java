@@ -9,11 +9,11 @@ public class ScoreComparator implements Comparator<Score> {
 	public int compare(Score a, Score b) {
 
 		// Get the score and create the Integer Object for comparing
-		Integer myObj1 = new Integer(a.getScore());
-		Integer myObj2 = new Integer(b.getScore());
+		Integer points1 = new Integer(a.getScore());
+		Integer points2 = new Integer(b.getScore());
 
 		// Compare the score
-		int scoreResult = myObj1.compareTo(myObj2);
+		int scoreResult = points1.compareTo(points2);
 		
 		// Date time format *Please change to your own format*
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
