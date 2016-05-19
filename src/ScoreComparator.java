@@ -7,19 +7,22 @@ public class ScoreComparator implements Comparator<Score> {
 
 	@Override
 	public int compare(Score a, Score b) {
-		// TODO Auto-generated method stub
 
+		// Get the score and create the Integer Object for comparing
 		Integer myObj1 = new Integer(a.getScore());
 		Integer myObj2 = new Integer(b.getScore());
 
+		// Compare the score
 		int scoreResult = myObj1.compareTo(myObj2);
+		
+		// Date time format *Please change to your own format*
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 		if (scoreResult == 0) {
 
 			// Score are equal, sort by date
+			
 			Date date1 = null, date2 = null;
-
 			try {
 
 				date1 = sdf.parse(a.getDate());

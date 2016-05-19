@@ -8,8 +8,8 @@ import java.util.Date;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		// Creating the data
 		ArrayList<Score> scoreList = new ArrayList<Score>();
 		scoreList.add(new Score("John", "Math", "Addition", 4, "2016-05-19 09:01:04"));
 		scoreList.add(new Score("Sam", "Math", "Addition", 10, "2016-05-19 09:07:04"));
